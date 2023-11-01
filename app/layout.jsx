@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
           <nav className="flex h-screen flex-col items-center justify-between p-1 sm:max-w-[7vw] lg:min-w-20 bg-white">
             <Image
               src="/logo.png"
-              alt="toto"
+              alt="toto1"
               className="w-full mt-2 "
               width={1020}
               height={1046}
