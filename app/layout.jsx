@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link'
+import "next"
 // import GitHub from "./github.png";
 // import LinkedIn from "./linkedin.png";
 // import Logo from "./app/logo.png";
