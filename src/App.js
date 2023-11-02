@@ -43,8 +43,10 @@ function App() {
             <p>Contact</p>
           </div>
         </header>
-        <div className="p-2 lg:p-6 ">
-          <div className="lg: flex flex-col justify-center gap-4">
+
+
+        <div className="p-2 lg:p-6">
+          <div className="lg: flex flex-col justify-center gap-8 pt-16">
             <p className="ml-5 grow-0 text-2xl font-extrabold text-white sm:text-xl md:text-2xl lg:text-5xl xl:text-6xl">
               Student
             </p>
@@ -58,6 +60,8 @@ function App() {
             </p>
           </div>
         </div>
+
+
       </div>
     </main>
   );
