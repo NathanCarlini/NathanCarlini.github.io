@@ -5,7 +5,7 @@ import linkedin from './assets/linkedin.png'
 function App() {
   return (
     <main className="flex flex-row">
-      <nav className="flex h-screen flex-col items-center justify-between p-1 sm:max-w-[7vw] lg:min-w-20 bg-white">
+      <nav className="flex h-screen flex-col items-center justify-between p-1 sm:max-w-[5vw] lg:min-w-16 bg-white">
         <img
           src={logo}
           alt="toto1"
