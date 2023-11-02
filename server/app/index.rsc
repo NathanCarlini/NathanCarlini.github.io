@@ -1,4 +1,4 @@
-0:["MHCSSYoWmluSXg2fTaLtW",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L1",[null,"$L2"]]]]
+0:["L6ShdLuFKEVyfgZPTwaTo",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L1",[null,"$L2"]]]]
 3:HL["/_next/static/css/374860d9fa4ccd94.css","style",{"crossOrigin":""}]
 4:I[413,["326","static/chunks/326-a244cdf3b150e525.js","413","static/chunks/413-57b07284c836d940.js","185","static/chunks/app/layout-3d7d7b1f4cf8beec.js"],"Image"]
 5:I[8326,["326","static/chunks/326-a244cdf3b150e525.js","413","static/chunks/413-57b07284c836d940.js","185","static/chunks/app/layout-3d7d7b1f4cf8beec.js"],""]
