@@ -172,9 +172,36 @@ function App() {
               Projects
             </p>
             <div className="gap-6 flex flex-row space-evenly grow items-center pb-24">
-              <a href="https://github.com/NathanCarlini/SAE301"><div className="text-white text-center text-2xl font-black hover:"><div className="aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEcc"/>Création d'un Site <br /> E-commerce</div></a>
-              <a href="https://github.com/NathanCarlini/SAE303"><div className="text-white text-center text-2xl font-black hover:"><div className="aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEdv"/>Data visualisation en JS</div></a>
-              <a href="https://github.com/NathanCarlini/OrionsHalosis"><div className="text-white text-center text-2xl font-black hover:"><div className="aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEoh"/>Jeu multijoueur tour par tour</div></a>
+              <a href="https://github.com/NathanCarlini/SAE301">
+                <div className=" text-white text-center text-2xl font-black hover:">
+                  <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEcc hover:bg-SAEccc">
+                    <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-in-out delay-300 text-white leading-loose">
+                      Langages : <br /> - HTML <br /> - JS <br /> - PHP & Symphony
+                    </div>
+                  </div>
+                  Création d'un Site <br /> E-commerce
+                </div>
+              </a>
+              <a href="https://github.com/NathanCarlini/SAE303">
+                <div className=" text-white text-center text-2xl font-black hover:">
+                  <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEdv hover:bg-SAEdvc">
+                    <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-out delay-300 text-white leading-loose">
+                      Langages : <br/> - HTML <br/> - JS <br/> 
+                    </div>
+                  </div>
+                  Data visualisation en JS
+                </div>
+              </a>
+              <a href="https://github.com/NathanCarlini/OrionsHalosis">
+                <div className=" text-white text-center text-2xl font-black hover:">
+                  <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEoh hover:bg-SAEohc">
+                    <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-out delay-300 text-white leading-loose">
+                      Langages : <br/> - HTML <br/><p> - JS (Express, Node) </p><br/> - NextJS
+                    </div>
+                  </div>
+                  Jeu multijoueur tour par tour
+                </div>
+              </a>
             </div>
           </div>
         </div>

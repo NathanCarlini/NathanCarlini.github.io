@@ -9,8 +9,11 @@ module.exports = {
       },
       backgroundImage: {
         'SAEcc': "url('./assets/SAEcc.png')",
+        'SAEccc': "url('./assets/SAEccc.png')",
         'SAEdv': "url('./assets/SAEdv.png')",
+        'SAEdvc': "url('./assets/SAEdvc.png')",
         'SAEoh': "url('./assets/SAEoh.png')",
+        'SAEohc': "url('./assets/SAEohc.png')",
       }
     },
   },
