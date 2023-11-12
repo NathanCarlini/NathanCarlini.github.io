@@ -2,6 +2,10 @@ import github from "./assets/github.png";
 import logo from "./assets/logo.png";
 import linkedin from "./assets/linkedin.png";
 import arrow from "./assets/arrow.png";
+import moi from "./assets/moi.png";
+import ghw from "./assets/ghw.png";
+import ld from "./assets/ld.png";
+import be from "./assets/be.png";
 import { useEffect } from "react";
 // import second from 'script.js'
 
@@ -141,12 +145,14 @@ function App() {
               className="z-0 w-full h-screen bg-[#232323] absolute"
             ></canvas>
             <header className="flex flex-row items-center justify-between border-b-2 border-purp lg:h-[8%] font-semibold w-full z-20">
-              <p className="p-4 pl-5 text-xl capitalize text-purp xl:text-5xl">
+              <p className=" pl-5 text-xl capitalize text-purp xl:text-5xl h-fit">
                 Nathan CARLINI
               </p>
-              <div className="flex h-full items-center bg-purp px-8 py-4 text-lg xl:text-2xl ">
-                <p>Contact</p>
-              </div>
+              <a href="#contact">
+                <div className="flex h-full items-center bg-purp px-8 py-4 text-lg xl:text-2xl ">
+                  <p>Contact</p>
+                </div>
+              </a>
             </header>
 
             <div className="p-2 lg:p-6 items-center flex flex-col h-full justify-between z-20">
@@ -176,7 +182,8 @@ function App() {
                 <div className=" text-white text-center text-2xl font-black hover:">
                   <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEcc hover:bg-SAEccc">
                     <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-in-out delay-300 text-white leading-loose">
-                      Langages : <br /> - HTML <br /> - JS <br /> - PHP & Symphony
+                      Langages : <br /> - HTML <br /> - JS <br /> - PHP &
+                      Symphony
                     </div>
                   </div>
                   Création d'un Site <br /> E-commerce
@@ -186,7 +193,7 @@ function App() {
                 <div className=" text-white text-center text-2xl font-black hover:">
                   <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEdv hover:bg-SAEdvc">
                     <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-out delay-300 text-white leading-loose">
-                      Langages : <br/> - HTML <br/> - JS <br/> 
+                      Langages : <br /> - HTML <br /> - JS <br />
                     </div>
                   </div>
                   Data visualisation en JS
@@ -196,12 +203,58 @@ function App() {
                 <div className=" text-white text-center text-2xl font-black hover:">
                   <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEoh hover:bg-SAEohc">
                     <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-out delay-300 text-white leading-loose">
-                      Langages : <br/> - HTML <br/><p> - JS (Express, Node) </p><br/> - NextJS
+                      Langages : <br /> - HTML <br />
+                      <p> - JS (Express, Node) </p>
+                      <br /> - NextJS
                     </div>
                   </div>
                   Jeu multijoueur tour par tour
                 </div>
               </a>
+            </div>
+          </div>
+          <div
+            className="h-screen w-full bg-black flex flex-col items-center"
+            id="contact"
+          >
+            <p className="ml-5 font-sans text-6xl font-black text-white pt-8 md:text-6xl lg:text-6xl xl:text-7xl text-left">
+              {" "}
+              Contact
+            </p>
+            <div className="flex flex-row">
+              <img src={moi} className="" />
+              <div className="flex flex-col items-center">
+                <p className="mt-16 ml-5 text-2xl text-white leading-loose">
+                  Je suis un étudiant en troisième année d'un Bachelor
+                  Universitaire de Technologie en Métiers du Multimédia et de
+                  l'Internet (BUT MMI). En cursus développement, je me concentre
+                  principalement sur du web, du design de sites, de la mise en
+                  place de CMS, et du dev front et back. Mais pas que ! La
+                  création de motion designs, la gestion de projet ou encore la
+                  mise en place de stratégies de communication font aussi partie
+                  de mes compétences. <br />
+                  <br />
+                  J'ai effectué un stage de 2 mois en 2023 dans une
+                  entreprise de développement web et d'application basée à
+                  Clermont-Ferrand nomméee <a href="https://becoms.tech/" className="text-yellow-500">Becoms</a>. J'ai eu l'ocasion de
+                  travailler sur un projet d'IoT de banc connecté avec de
+                  multiples APIs, majoritairement en React, Express et Python.
+                </p>
+                <p className="text-4xl font-extrabold text-center mt-24 text-white">
+                  Je suis présent sur :
+                </p>
+                <div className="flex flex-row gap-8 mt-12 w-full justify-center">
+                  <a href="https://github.com/NathanCarlini/">
+                    <img src={ghw} className="aspect-square w-16"></img>
+                  </a>
+                  <a href="https://fr.linkedin.com/in/nathan-carlini-116a55220">
+                    <img src={ld} className="aspect-square w-16"></img>
+                  </a>
+                  <a href="https://www.behance.net/sgt339">
+                    <img src={be} className=" w-24"></img>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
