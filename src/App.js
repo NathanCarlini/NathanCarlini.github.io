@@ -138,7 +138,7 @@ function App() {
           <div className="h-screen bg-black flex flex-col items-center">
             <canvas
               id="canvas"
-              className="z-0 w-screen h-screen bg-[#232323] absolute"
+              className="z-0 w-full h-screen bg-[#232323] absolute"
             ></canvas>
             <header className="flex flex-row items-center justify-between border-b-2 border-purp lg:h-[8%] font-semibold w-full z-20">
               <p className="p-4 pl-5 text-xl capitalize text-purp xl:text-5xl">
