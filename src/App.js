@@ -238,7 +238,7 @@ function App() {
                   entreprise de développement web et d'application basée à
                   Clermont-Ferrand nomméee <a href="https://becoms.tech/" className="text-yellow-500">Becoms</a>. J'ai eu l'ocasion de
                   travailler sur un projet d'IoT de banc connecté avec de
-                  multiples APIs, majoritairement en React, Express et Python. &emsp; <a href="/NathanCarlini.pdf" target="_blank" className="text-yellow-500">Mon CV </a>
+                  multiples APIs, majoritairement en React, Express et Python. &emsp; &emsp; &emsp; <a href="/NathanCarlini.pdf" target="_blank" className="text-yellow-500">Mon CV </a>
                 </p>
                 <p className="text-4xl font-extrabold text-center mt-24 text-white">
                   Je suis présent sur :
