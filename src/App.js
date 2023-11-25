@@ -173,17 +173,16 @@ function App() {
             <img src={arrow} className="w-7 aspect-square mb-3 z-20" />
           </div>
           <div className="bg-black h-screen flex flex-col w-full items-center">
-            <p className="ml-5 font-sans text-6xl font-black text-white pt-8 md:text-6xl lg:text-6xl xl:text-7xl text-left">
+            <p className="ml-5 font-sans text-6xl font-black text-white pt-8 md:text-6xl lg:text-6xl xl:text-7xl text-left mb-10">
               {" "}
               Projects
             </p>
-            <div className="gap-6 flex flex-row space-evenly grow items-center pb-24">
+            <div className="xl:flex xl:flex-row gap-6 sm:grid sm:grid-cols-2 space-evenly grow xl:items-center pb-24">
               <a href="https://github.com/NathanCarlini/SAE301">
                 <div className=" text-white text-center text-2xl font-black hover:">
                   <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEcc hover:bg-SAEccc">
                     <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-in-out delay-300 text-white leading-loose">
-                      Langages : <br /> - HTML <br /> - JS <br /> - PHP &
-                      Symphony
+                      Langages : <br /> - HTML <br /> - JS <br /> - PHP & Symphony
                     </div>
                   </div>
                   Création d'un Site <br /> E-commerce
@@ -203,9 +202,7 @@ function App() {
                 <div className=" text-white text-center text-2xl font-black hover:">
                   <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEoh hover:bg-SAEohc">
                     <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-out delay-300 text-white leading-loose">
-                      Langages : <br /> - HTML <br />
-                      <p> - JS (Express, Node) </p>
-                      <br /> - NextJS
+                      Langages : <br /> - HTML <br /> - JS, Express, Node <br /> - NextJS
                     </div>
                   </div>
                   Jeu multijoueur tour par tour
@@ -222,9 +219,9 @@ function App() {
               Contact
             </p>
             <div className="flex flex-row">
-              <img src={moi} className="" />
+              <img src={moi} className="sm:hidden xl:inline" />
               <div className="flex flex-col items-center">
-                <p className="mt-16 ml-5 text-2xl text-white leading-loose">
+                <p className="xl:mx-0 mt-16 ml-5 text-2xl text-white leading-loose sm:mx-5">
                   Je suis un étudiant en troisième année d'un Bachelor
                   Universitaire de Technologie en Métiers du Multimédia et de
                   l'Internet (BUT MMI). En cursus développement, je me concentre
