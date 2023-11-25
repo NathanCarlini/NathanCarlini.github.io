@@ -7,7 +7,6 @@ import ghw from "./assets/ghw.png";
 import ld from "./assets/ld.png";
 import be from "./assets/be.png";
 import { useEffect } from "react";
-// import second from 'script.js'
 
 function App() {
   useEffect(() => {
@@ -17,11 +16,9 @@ function App() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    var stars = [], // Array that contains the stars
-      FPS = 30, // Frames per second
-      x = 70; // Number of stars
-
-    // Push stars to array
+    var stars = [],
+      FPS = 30, 
+      x = 70; 
 
     for (var i = 0; i < x; i++) {
       stars.push({
@@ -33,7 +30,7 @@ function App() {
       });
     }
 
-    // Draw the scene
+
 
     function draw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -58,7 +55,7 @@ function App() {
         for (var j = 0, x = stars.length; j < x; j++) {
           var starII = stars[j];
           if (distance(starI, starII) < 150) {
-            //ctx.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
+            
             ctx.lineTo(starII.x, starII.y);
           }
         }
@@ -81,7 +78,7 @@ function App() {
       return Math.sqrt(xs + ys);
     }
 
-    // Update star locations
+   
 
     function update() {
       for (var i = 0, x = stars.length; i < x; i++) {
@@ -95,7 +92,7 @@ function App() {
       }
     }
 
-    // Update and draw
+   
 
     function tick() {
       draw();
