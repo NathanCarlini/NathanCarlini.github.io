@@ -15,11 +15,9 @@ function App() {
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-
     var stars = [],
-      FPS = 30, 
-      x = 70; 
-
+      FPS = 30,
+      x = 70;
     for (var i = 0; i < x; i++) {
       stars.push({
         x: Math.random() * canvas.width,
@@ -29,9 +27,6 @@ function App() {
         vy: Math.floor(Math.random() * 50) - 25,
       });
     }
-
-
-
     function draw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -55,7 +50,6 @@ function App() {
         for (var j = 0, x = stars.length; j < x; j++) {
           var starII = stars[j];
           if (distance(starI, starII) < 150) {
-            
             ctx.lineTo(starII.x, starII.y);
           }
         }
@@ -78,8 +72,6 @@ function App() {
       return Math.sqrt(xs + ys);
     }
 
-   
-
     function update() {
       for (var i = 0, x = stars.length; i < x; i++) {
         var s = stars[i];
@@ -91,8 +83,6 @@ function App() {
         if (s.y < 0 || s.y > canvas.height) s.vy = -s.vy;
       }
     }
-
-   
 
     function tick() {
       draw();
@@ -141,7 +131,7 @@ function App() {
               id="canvas"
               className="z-0 w-full h-screen bg-[#232323] absolute"
             ></canvas>
-            <header className="flex flex-row items-center justify-between border-b-2 border-purp lg:h-[8%] font-semibold w-full z-20">
+            <header className="flex flex-row items-center justify-between border-b-2 border-purp font-semibold w-full z-20">
               <p className=" pl-5 text-xl capitalize text-purp xl:text-5xl h-fit">
                 Nathan CARLINI
               </p>
@@ -179,7 +169,8 @@ function App() {
                 <div className=" text-white text-center text-2xl font-black hover:">
                   <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEcc hover:bg-SAEccc">
                     <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-in-out delay-300 text-white leading-loose">
-                      Langages : <br /> - HTML <br /> - JS <br /> - PHP & Symphony
+                      Langages : <br /> - HTML <br /> - JS <br /> - PHP &
+                      Symphony
                     </div>
                   </div>
                   Création d'un Site <br /> E-commerce
@@ -199,7 +190,8 @@ function App() {
                 <div className=" text-white text-center text-2xl font-black hover:">
                   <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEoh hover:bg-SAEohc">
                     <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-out delay-300 text-white leading-loose">
-                      Langages : <br /> - HTML <br /> - JS, Express, Node <br /> - NextJS
+                      Langages : <br /> - HTML <br /> - JS, Express, Node <br />{" "}
+                      - NextJS
                     </div>
                   </div>
                   Jeu multijoueur tour par tour
@@ -215,24 +207,43 @@ function App() {
               {" "}
               Contact
             </p>
-            <div className="flex flex-row">
-              <img src={moi} className="sm:hidden xl:inline" />
-              <div className="flex flex-col items-center">
+            <div className="flex flex-row xl:mx-3">
+              {/* <img src={moi} className="sm:hidden xl:inline " /> */}
+              <div className="flex flex-col items-center px-10">
                 <p className="xl:mx-0 mt-16 ml-5 text-2xl text-white leading-loose sm:mx-5">
-                  Je suis un étudiant en troisième année d'un Bachelor
+                  J'ai complété un Bachelor
                   Universitaire de Technologie en Métiers du Multimédia et de
-                  l'Internet (BUT MMI). En cursus développement, je me concentre
+                  l'Internet (BUT MMI) en cursus développement. Je me concentre
                   principalement sur du web, du design de sites, de la mise en
                   place de CMS, et du dev front et back. Mais pas que ! La
                   création de motion designs, la gestion de projet ou encore la
                   mise en place de stratégies de communication font aussi partie
                   de mes compétences. <br />
                   <br />
-                  J'ai effectué un stage de 2 mois en 2023 dans une
-                  entreprise de développement web et d'application basée à
-                  Clermont-Ferrand nomméee <a href="https://becoms.tech/" className="text-yellow-500">Becoms</a>. J'ai eu l'ocasion de
-                  travailler sur un projet d'IoT de banc connecté avec de
-                  multiples APIs, majoritairement en React, Express et Python. &emsp; &emsp; &emsp; <a href="/NathanCarlini.pdf" target="_blank" className="text-yellow-500">Mon CV </a>
+                  J'ai effectué un stage de 2 mois en 2023 dans une entreprise
+                  de développement web et d'application basée à Clermont-Ferrand
+                  nomméee{" "}
+                  <a href="https://becoms.tech/" className="text-yellow-500">
+                    Becoms
+                  </a>
+                  . J'ai eu l'ocasion de travailler sur un projet d'IoT de banc
+                  connecté avec de multiples APIs, majoritairement en React,
+                  Express et Python. <br />
+                  <br />
+                  En troisième année de BUT MMI, j'ai pu participer au développement d'un extranet 
+                  d'échange documentaire complet dépendant d'une plateforme de formation pour l'entreprise 
+                  <a href="https://www.yanola.fr/" className="text-yellow-500">
+                    Yanola
+                  </a> et réaliser la mise en place d'une plateforme
+                  d'hébergement de vidéos.
+                  &emsp; &emsp; &emsp;{" "}
+                  <a
+                    href="/NathanCarlini.pdf"
+                    target="_blank"
+                    className="text-yellow-500"
+                  >
+                    Mon CV{" "}
+                  </a>
                 </p>
                 <p className="text-4xl font-extrabold text-center mt-24 text-white">
                   Je suis présent sur :
