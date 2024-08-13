@@ -245,6 +245,7 @@ function App() {
                     Mon CV{" "}
                   </a>
                 </p>
+                {/* ghghg */}
                 <p className="text-4xl font-extrabold text-center mt-24 text-white">
                   Je suis présent sur :
                 </p>
