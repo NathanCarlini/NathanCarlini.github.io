@@ -94,9 +94,9 @@ function App() {
   }, []);
 
   return (
-    <main className="flex flex-col scroll-smooth">
+    <main className="flex flex-col scroll-smooth bg-black">
       <div className="flex flex-row">
-        <nav className=" h-screen flex flex-col items-center justify-between p-1 sm:max-w-[5vw] lg:min-w-16 bg-white sticky top-0 z-20">
+        <nav className="hidden lg:flex h-screen  flex-col items-center justify-between p-1 sm:max-w-[5vw] lg:min-w-16 bg-white sticky top-0 z-20 ">
           <img
             src={logo}
             alt="toto1"
@@ -132,12 +132,19 @@ function App() {
               className="z-0 w-full h-screen bg-[#232323] absolute"
             ></canvas>
             <header className="flex flex-row items-center justify-between border-b-2 border-purp font-semibold w-full z-20">
-              <p className=" pl-5 text-xl capitalize text-purp xl:text-5xl h-fit">
+              <p className=" pl-5 text-xl capitalize text-purp xl:text-5xl h-fit hidden lg:inline">
                 Nathan CARLINI
               </p>
+              <img
+            src={logo}
+            alt="toto1"
+            className="w-[15%] mt-2 inline lg:hidden ml-2 pb-2"
+            width={1020}
+            height={1046}
+          />
               <a href="#contact">
-                <div className="flex h-full items-center bg-purp px-8 py-4 text-lg xl:text-2xl ">
-                  <p>Contact</p>
+                <div className="flex h-full items-center bg-purp lg:px-8 py-4 text-lg xl:text-2xl ">
+                  <p className="hidden lg:inline">Contact</p>
                 </div>
               </a>
             </header>
@@ -147,7 +154,7 @@ function App() {
                 <p className="ml-5 grow-0 text-2xl font-extrabold text-white sm:text-xl md:text-2xl lg:text-5xl xl:text-6xl z-20">
                   Student
                 </p>
-                <p className="ml-5 font-sans text-6xl font-black text-purp  md:text-7xl lg:text-7xl xl:text-8xl">
+                <p className="ml-5 font-sans text-3xl font-black text-purp  md:text-7xl lg:text-7xl xl:text-8xl">
                   WEB & APP <br />
                   &emsp; DEVELOPPER
                 </p>
@@ -166,8 +173,8 @@ function App() {
             </p>
             <div className="xl:flex xl:flex-row gap-6 sm:grid sm:grid-cols-2 space-evenly grow xl:items-center pb-24">
               <a href="https://github.com/NathanCarlini/SAE301">
-                <div className=" text-white text-center text-2xl font-black hover:">
-                  <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEcc hover:bg-SAEccc">
+                <div className=" text-white text-center text-2xl mb-6 font-black flex flex-col items-center">
+                  <div className="box overflow-hidden aspect-video h-28 lg:h-56 xl:h-64 bg-cover bg-SAEcc  hover:bg-SAEccc">
                     <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-in-out delay-300 text-white leading-loose">
                       Langages : <br /> - HTML <br /> - JS <br /> - PHP &
                       Symphony
@@ -177,8 +184,8 @@ function App() {
                 </div>
               </a>
               <a href="https://github.com/NathanCarlini/SAE303">
-                <div className=" text-white text-center text-2xl font-black hover:">
-                  <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEdv hover:bg-SAEdvc">
+                <div className=" text-white text-center text-2xl mb-6 font-black flex flex-col items-center">
+                  <div className="box overflow-hidden aspect-video h-28 lg:h-56 xl:h-64 bg-cover bg-SAEdv  hover:bg-SAEdvc">
                     <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-out delay-300 text-white leading-loose">
                       Langages : <br /> - HTML <br /> - JS <br />
                     </div>
@@ -187,8 +194,8 @@ function App() {
                 </div>
               </a>
               <a href="https://github.com/NathanCarlini/OrionsHalosis">
-                <div className=" text-white text-center text-2xl font-black hover:">
-                  <div className="box overflow-hidden aspect-video h-24 lg:h-56 xl:h-64 bg-cover bg-SAEoh hover:bg-SAEohc">
+                <div className=" text-white text-center text-2xl mb-6 font-black flex flex-col items-center">
+                  <div className="box overflow-hidden aspect-video h-28 lg:h-56 xl:h-64 bg-cover bg-SAEoh  hover:bg-SAEohc">
                     <div className="backdrop-blur-sm h-full w-full top-full hid-box relative transition ease-out delay-300 text-white leading-loose">
                       Langages : <br /> - HTML <br /> - JS, Express, Node <br />{" "}
                       - NextJS
@@ -209,8 +216,8 @@ function App() {
             </p>
             <div className="flex flex-row xl:mx-3">
               {/* <img src={moi} className="sm:hidden xl:inline " /> */}
-              <div className="flex flex-col items-center px-10">
-                <p className="xl:mx-0 mt-16 ml-5 text-2xl text-white leading-loose sm:mx-5">
+              <div className="flex flex-col items-center px-10 bg-black">
+                <p className="xl:mx-0 mt-16 ml-5 text-sm text-white leading-loose sm:mx-3 lg:text-2xl">
                   J'ai complété un Bachelor
                   Universitaire de Technologie en Métiers du Multimédia et de
                   l'Internet (BUT MMI) en cursus développement. Je me concentre
@@ -246,10 +253,10 @@ function App() {
                   </a>
                 </p>
                 {/* ghdghg */}
-                <p className="text-4xl font-extrabold text-center mt-24 text-white">
+                <p className="text-xl lg:text-4xl font-extrabold text-center mt-24 text-white">
                   Je suis présent sur :
                 </p>
-                <div className="flex flex-row gap-8 mt-12 w-full justify-center">
+                <div className="flex flex-row gap-8 mt-12 mb-6 w-full justify-center">
                   <a href="https://github.com/NathanCarlini/">
                     <img src={ghw} className="aspect-square w-16"></img>
                   </a>
